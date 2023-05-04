@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="../css/login.css">
+        <link rel="stylesheet" type="text/css" href="../css/header.css">
+        <link rel="stylesheet" type="text/css" href="../css/fonts.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+            <header class="header">
+            <h4 class="company-name">Dastan</h4>
+            <nav class="navigation">
+                <a class="navigation__content" href="/views/index.html">Home</a>
+                <a class="navigation__content" href="/views/menu.html">Menu</a>
+                <a class="navigation__content" href="/views/reservation.html">Order</a>
+                <a class="navigation__content" href="/views/profile.html">Profile</a>
+            </nav>
+            <div class="burger">
+                <div class="hr-wrapper">
+                    <hr class="burger__hr">
+                    <hr class="burger__hr">
+                    <hr class="burger__hr">
+                </div>
+            </div>
+        </header>
+        <div class="c">
+            <div class="card">
+                <div class="person">
+                    <img class="avatar" src="/img/avatar.png" alt="">
+                </div>
+                <div class="content-wrapper">
+                    <h3 class="content-header">Login here</h3>
+                    <form class="form" action="/login" method="POST">
+                        <h4 class="form-header">Email</h4>
+                        <input class="input" placeholder="Enter email" type="email" name="email"
+                               required>
+                        <p class="error-message"></p>
+                        <h4 class="form-header">Password</h4>
+                        <input class="input" placeholder="Enter Password" type="password" id='password' name="password"
+                               required autocomplete="current-password" minlength="8">
+                        <p class="error-message"></p>
+                        <button class="login-button" type="submit" name="button">
+                            <p class="button__text">Login</p>
+                        </button>
+                    </form>
+                    <a href="/register" class="register">Don't have an account?</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <article class="information">
+                <section class="section">
+                    <h4 class="information__header">Dastan food</h4>
+                    <p class="information__text restaurant">Ресторан</p>
+                    <div class="icons-wrapper">
+                        <a href="https://www.facebook.com"><img class="icon" src="../img/facebook.png" alt=""></a>
+                        <a href="https://www.instagram.com"><img class="icon" src="../img/instagram.png" alt=""></a>
+                        <a href="https://www.twitter.com"><img class="icon" src="../img/twitter.png" alt=""></a>
+                    </div>
+                </section>
+                <section class="section">
+                    <h3>Время работы</h3>
+                    <p class="information__text">ПОНЕДЕЛЬНИК - ВОСКРЕСЕНЬЕ <br>
+                        10:00 - 14:00 <br>
+                        15:00 - 00:00</p>
+                </section>
+                <section class="section">
+                    <h3>Адрес</h3>
+                    <p class="information__text">KYRGYZSTAN<br>
+                        KYRGYZSTAN</p>
+                </section>
+                <section class="section">
+                    <h3>Контакты</h3>
+                    <a href="tel:+79999999999"
+                       class="contacts__information information__text">+(996) 68-24-45</a>
+                    <br>
+                    <a href="tel:+79999999999"
+                       class="contacts__information information__text">+(996) 68-24-45</a>
+                    <br>
+                    <a class="contacts__information information__text"
+                       href="mailto:uglifood@gmail.com">uglifood@gmail.com</a>
+                </section>
+            </article>
+            <div class="end">
+                <p class="end__text information__text">&copy; 2023 Dastan Все права защищены.</p>
+            </div>
+        </footer>
+        <script src="../js/main.js"></script>
+    </body>
+</html>
