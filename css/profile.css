@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    background:  #fcffff;
+}
+
+.content-header__center {
+    text-align: center;
+}
+
+.content-header {
+    margin-top: 100px;
+    color: green;
+    font-weight: 500;
+}
+
+.content-header-main {
+    line-height: 1.5em;
+}
+
+.ol {
+    margin: auto;
+    width: 90%;
+    max-width: 450px;
+    padding-left: 0;
+}
+
+.li {
+    margin: 15px;
+}
+
+.logout {
+    position: absolute;
+    right: 5%;
+    top: 100px;
+    color: green;
+    font-size: 18px;
+}
+
+.hr {
+    border: 0;
+    height: 2px;
+    background-color: green;
+}
+
+.wrapper {
+    min-height: 50vh;
+}
+
+.no {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    color: gray;
+}
