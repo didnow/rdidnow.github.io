@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>UGLI food</title>
+        <link rel="stylesheet" type="text/css" href="../css/header.css">
+        <link rel="stylesheet" type="text/css" href="../css/footer.css">
+        <link rel="stylesheet" type="text/css" href="../css/fonts.css">
+        <link rel="stylesheet" type="text/css" href="../css/reservation.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header class="header">
+            <h4 class="company-name">Dastan</h4>
+            <nav class="navigation">
+                <a class="navigation__content" href="/views/index.html">Home</a>
+                <a class="navigation__content" href="/views/menu.html">Menu</a>
+                <a class="navigation__content" href="/views/reservation.html">Order</a>
+                <a class="navigation__content" href="/views/profile.html">Profile</a>
+            </nav>
+            <div class="burger">
+                <div class="hr-wrapper">
+                    <hr class="burger__hr">
+                    <hr class="burger__hr">
+                    <hr class="burger__hr">
+                </div>
+            </div>
+        </header>
+
+            <div class="reservation" id="order">
+                <h3 class="content-header__center content-header">Reservation</h3>
+                <h2 class="content-header-main content-header__center">Забронировать столик</h2>
+                <div class="order">
+                    <div class="funcs">
+                        <p class="funcs__text">Поиск столика</p>
+                        <a class="funcs__text orders" href="/profile"><p>Мои заказы</p></a>
+                    </div>
+                    <hr class="hr">
+                    <form class="settings" action="/reservation" method="POST">
+                        <div class="buttons__wrapper">
+
+                            <select class="settings__button" name="person">
+                                <option class="option" value="1">1 человек</option>
+                                <option value="2">2 человека</option>
+                                <option value="3">3 человека</option>
+                                <option value="4">4 человека</option>
+                                <option value="5">5 человек</option>
+                            </select>
+
+                            <input class="settings__button" name="date" type="date">
+
+                            <input class="settings__button" name="time" type="time" min="10:00" max="23:30" value="10:00">
+
+                        </div>
+                        <button class=" button reservation__button" type="submit" name="button">
+                            <p class="button__text">Забронировать</p>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+
+            <footer class="footer">
+                <article class="information">
+                    <section class="section">
+                        <h4 class="information__header">Dastan food</h4>
+                        <p class="information__text restaurant">Ресторан</p>
+                        <div class="icons-wrapper">
+                            <a href="https://www.facebook.com"><img class="icon" src="../img/facebook.png" alt=""></a>
+                            <a href="https://www.instagram.com"><img class="icon" src="../img/instagram.png" alt=""></a>
+                            <a href="https://www.twitter.com"><img class="icon" src="../img/twitter.png" alt=""></a>
+                        </div>
+                    </section>
+                    <section class="section">
+                        <h3>Время работы</h3>
+                        <p class="information__text">ПОНЕДЕЛЬНИК - ВОСКРЕСЕНЬЕ <br>
+                            10:00 - 14:00 <br>
+                            15:00 - 00:00</p>
+                    </section>
+                    <section class="section">
+                        <h3>Адрес</h3>
+                        <p class="information__text">KYRGYZSTAN<br>
+                            KYRGYZSTAN</p>
+                    </section>
+                    <section class="section">
+                        <h3>Контакты</h3>
+                        <a href="tel:+79999999999"
+                           class="contacts__information information__text">+(996) 68-24-45</a>
+                        <br>
+                        <a href="tel:+79999999999"
+                           class="contacts__information information__text">+(996) 68-24-45</a>
+                        <br>
+                        <a class="contacts__information information__text"
+                           href="mailto:uglifood@gmail.com">uglifood@gmail.com</a>
+                    </section>
+                </article>
+                <div class="end">
+                    <p class="end__text information__text">&copy; 2023 Dastan Все права защищены.</p>
+                </div>
+            </footer>
+
+        <script src="../js/main.js"></script>
+    </body>
+</html>
